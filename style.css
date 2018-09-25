@@ -1,0 +1,297 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: 'Lucida Sans', sans-serif;
+    font-weight: lighter;
+}
+
+header {
+    width: 100%;
+    height: 72vh;
+    background: url(road.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+
+
+
+.wrapperContact {
+    background: url(contactbgg.jpeg) no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.contentIndex {
+    width: 94%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    
+}
+h1{
+     text-align: center;
+     margin: 0;
+     color: white;
+     padding: 20px;
+
+}
+h4{
+    color:seashell;
+    font-size: 20px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+}
+
+nav ul {
+    line-height: 40px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: 1s;
+}
+
+nav.black ul {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:seashell;
+    font-size: 16px;
+    
+    
+}
+.column1 {
+    width: 100%;
+    height: 600px;
+    background: url(001.jpeg);
+    position: relative;
+    background-size: cover;
+
+
+}
+
+.bildspel {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    background: black;
+
+
+}
+#slideshow {
+    margin-left: auto;
+	margin-right: auto;
+	display: block;
+
+}
+.knappdiv {
+    padding: 10px;
+    height: 120px;
+    background: black;
+    margin: 0;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    
+    
+}
+.knappdiv input {
+    padding: 10px;
+    margin: 0;
+    display: inline-block;
+}
+.column2 {
+    height: 80%; 
+    width: 80%; 
+    top: 10%; 
+    left: 10%; 
+    background: rgba(204, 204, 204, 0);
+    position: absolute;
+    border-radius: 25px;
+    display:none;
+
+}
+
+.vilka {
+    text-align: center;
+    color: white;
+
+    margin:0;
+    font-size: 35px;
+    cursor: pointer;
+    padding: 20px;
+    
+}
+
+.textaboutus {
+    color:white;
+    font-size: 20px;
+}
+
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+#fem {
+    text-align:center;
+
+}
+
+.current {
+    border-style: solid;
+    border-color:seashell;
+    
+
+}
+
+
+.map-responsive {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.map-responsive iframe {
+    position: absolute;
+    width: 50%;
+    height: 70%; 
+    top: 20%; 
+    left: 25%; 
+}
+
+.menuaboutus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.menuaboutus li {
+	display: inline-block;
+    user-select: none;
+    border-radius: 25px;
+    border: 2px white;
+    padding: 5px;
+}
+
+.menuaboutus li a {
+	text-decoration: none;
+	display: inline-block;
+	color: white;
+	font-family: "Source Sans Pro" sans-serif;
+	font-weight: lighter;
+	font-size: 28px;
+	padding: 0 20px;
+}
+
+.cool-link::after {
+	content: " ";
+	display: block;
+	width: 0;
+	height: 2px;
+	background: #fff;
+	transition: width 0.3s;
+}
+.cool-link:hover::after {
+	width: 100%;
+	transition: width 0.3s;
+}
+
+.aboutuscontainer {
+
+  width: 100%;
+  
+
+}
+
+.Dario {
+    height: 768px;
+    background:white;
+    
+
+}
+
+.Muas {
+    height: 768px;
+    background:palegoldenrod;
+    
+
+}
+
+.Albin {
+    height: 768px;
+    background:palegreen;
+
+
+}
+
+
+
+
+
+
+
+
+@media(max-width: 768px) {
+
+    .logo {
+          position: fixed;
+          top: 0;
+          margin-top: 16px;
+    }
+
+    nav ul {
+          max-height: 0px;
+          background: #000;
+    }
+
+    nav.black ul {
+          background: #000;
+    }
+
+    .showing {
+          max-height: 34em;
+    }
+
+    nav ul li {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 14px;
+          text-align: center;
+    }
+
+    .menu-icon {
+          display: block;
+    }
+
+  
+}
