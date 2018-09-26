@@ -46,13 +46,41 @@ h4{
     color:seashell;
     font-size: 20px;
 }
-
+#knapp{
+    height:20px; 
+    width:100px; 
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+    color: aqua;
+}
+#textDescription{
+color: #fff;
+text-align: center;
+}
 nav {
     position: fixed;
     width: 100%;
     line-height: 60px;
 }
+#bild{
+    width: 100%;
+    display: block;
+position: relative;
+background: black;
+}
+#imgGame{
+margin-left:auto;
+margin-right: auto;
+display: block; 
+}
 
+#knapp {
+    background: black;
+    align-items: center;
+    justify-content: center;   
+}
 nav ul {
     line-height: 40px;
     list-style: none;
@@ -269,7 +297,22 @@ nav ul li a {
 
 
 @media(max-width: 768px) {
-
+  #imgGame{
+        width: 50%;
+        
+    }
+    #knapp{
+        height:20px; 
+        width:100px; 
+        margin: -20px -50px; 
+        position:relative;
+        top:50%; 
+        left:50%;
+        color: aqua;
+    }
+    #sectionaboutus{
+        z-index: 10;
+    }
     .logo {
           position: fixed;
           top: 0;
