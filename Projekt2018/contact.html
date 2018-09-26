@@ -45,14 +45,16 @@
                         <label for="username" >Name:</label><br>
                         
                          <input type="text" id="name" placeholder="Write your name here..">
-                            <br>
+                              <p class="nameText"></p>           
+                <br>
                                     <br>
                                     <div>
                                     
                                          <label for="E-mail">E-mail:</label><br>
                                  
                                          <input type="e-mail" id="email" placeholder="Write your email here..">
-                                            <br>  
+                                          <p class="emailText"></p>
+                                          <br>  
                                             <br>
                                                   
                                       </div>
@@ -62,18 +64,20 @@
                         <br>
                          
                     <input type="number" id="number" placeholder="+46">
+                        <p class="nummerText"></p>
                     <br>
                 </div><br>
                 
                 <p>Write your message here</p>
                      <textarea style=" height:200px; width: 200px;"> </textarea>
-                    <br>
+                   <p class="meddelandeText"></p>   
+                <br>
                     <br>
                     
 
                     
                 <div class="knappfan">
- <button id="bk1" typ="submit">Submit</button>
+ <button id="bk1" typ="submit" onsubmit="validering();">Submit</button>
            </div>       
            <div id="karta">
                <H4>Our location</H4>
