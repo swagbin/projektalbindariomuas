@@ -1,5 +1,5 @@
 var index=0;
-var bild=["1.jpg","2.jpg","3.jpg","4.jpg"];
+var bild=["2.jpg","3.jpg","1.jpg"];
 var intervalId;
 
 function bilder(){
