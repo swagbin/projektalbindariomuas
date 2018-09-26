@@ -129,7 +129,7 @@ function valederaTelefonnummer(){
         $(".nummerText").html("måste innehålla bara siffror");
         $(".nummerText").css("color","red");
     }
-    else  if(telefonnummer.length<=10){
+    else  if(telefonnummer.length<=13){
         $(".nummerText").html("o.k");
         $(".nummerText").css("color","green");
     }
