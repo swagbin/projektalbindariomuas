@@ -1,6 +1,7 @@
 var index=0;
 var bild=["2.jpg","3.jpg","1.jpg"];
 var intervalId;
+var text=["här kommer den andra beskrivning","trejde","här kommer första beskrivning"];
 
 function bilder(){
 
@@ -9,6 +10,8 @@ intervalId=setInterval(
     if(index===bild.length){
    index=0;  
 }
+
+ $("#textDescription").html(text[index]);
 document.getElementById("imgGame").setAttribute("src",bild[index]); 
 
 index++;
