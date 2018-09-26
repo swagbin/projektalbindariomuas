@@ -248,7 +248,18 @@ nav ul li a {
 }
 
 
+.img2 {
 
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.4s all;
+    
+}
+
+.cool-link a:hover > img2{
+
+    filter:none;
+}
 
 
 
@@ -288,6 +299,23 @@ nav ul li a {
 
     #karta {
         display: none;
+    }
+	
+    .column2 {
+        margin: 0;
+        padding: 0;
+        font-size: sans-serif;
+
+    }
+   
+    .border {
+        display:block;
+        margin:auto;
+        width: 160px;
+        height: 3px;
+        background: #fff;
+        margin-bottom: 40px;
+
     }
 
 }
