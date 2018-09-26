@@ -4,9 +4,6 @@ html, body {
     width: 100%;
 }
 
-nav{
-    z-index:+10 ;
-}
 body {
     font-family: 'Lucida Sans', sans-serif;
     font-weight: lighter;
@@ -66,19 +63,6 @@ nav ul {
     text-align: center;
     margin: 0;
     transition: 1s;
-}
-#knapp{
-        height:20px; 
-        width:100px; 
-        margin: -20px -50px; 
-        position:relative;
-        top:50%; 
-        left:50%;
-        color: aqua;
-    }
-#textDescription{
-    color: #fff;
-    text-align: center;
 }
 
 nav.black ul {
@@ -146,6 +130,7 @@ nav ul li a {
     position: absolute;
     border-radius: 25px;
     display:none;
+    
 
 }
 
@@ -201,7 +186,8 @@ nav ul li a {
     position: absolute;
     top: 50%;
     left: 50%;
-	transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    float: left; 
 }
 
 .menuaboutus li {
@@ -210,16 +196,20 @@ nav ul li a {
     border-radius: 25px;
     border: 2px white;
     padding: 5px;
+    
 }
 
 .menuaboutus li a {
 	text-decoration: none;
-	display: inline-block;
+	display: block;
 	color: white;
 	font-family: "Source Sans Pro" sans-serif;
 	font-weight: lighter;
 	font-size: 28px;
-	padding: 0 20px;
+    padding: 0 20px;
+    margin-left:auto;
+    margin-right: auto;;
+
 }
 
 .cool-link::after {
@@ -272,32 +262,13 @@ nav ul li a {
     
 }
 
-.cool-link a:hover > img2{
-
-    filter:none;
-}
-
-
-
+.img2:hover {
+   
+    filter: none;
+ }
 
 
 @media(max-width: 768px) {
-   #imgGame{
-        width: 70%;   
-    }
-    #knapp{
-        height:20px; 
-        width:100px; 
-        margin: -20px -50px; 
-        position:relative;
-        top:50%; 
-        left:50%;
-        color: aqua;
-    }
-#textDescription{
-    color: #fff;
-    text-align: center;
-}
 
     .logo {
           position: fixed;
@@ -328,9 +299,6 @@ nav ul li a {
     .menu-icon {
           display: block;
     }
-	nav{
-    z-index:+10 ;
-}
 
     #karta {
         display: none;
@@ -350,7 +318,7 @@ nav ul li a {
         height: 3px;
         background: #fff;
         margin-bottom: 40px;
-
+        
     }
 
 }
