@@ -3,9 +3,9 @@ html, body {
     padding: 0;
     width: 100%;
 }
-   #sectionaboutus{
-        z-index: 10;
-    }
+ nav{
+z-index: 10;
+}
 
 body {
     font-family: 'Lucida Sans', sans-serif;
@@ -300,7 +300,10 @@ nav ul li a {
 
 
 @media(max-width: 768px) {
-  #imgGame{
+  nav{
+z-index: 10;
+}
+	#imgGame{
         width: 50%;
         
     }
