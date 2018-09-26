@@ -3,6 +3,9 @@ html, body {
     padding: 0;
     width: 100%;
 }
+   #sectionaboutus{
+        z-index: 10;
+    }
 
 body {
     font-family: 'Lucida Sans', sans-serif;
