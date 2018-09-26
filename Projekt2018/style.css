@@ -3,7 +3,9 @@ html, body {
     padding: 0;
     width: 100%;
 }
-
+nav{
+    z-index:+10 ;
+}
 body {
     font-family: 'Lucida Sans', sans-serif;
     font-weight: lighter;
@@ -296,6 +298,9 @@ nav ul li a {
     .menu-icon {
           display: block;
     }
+	nav{
+    z-index:+10 ;
+}
 
     #karta {
         display: none;
