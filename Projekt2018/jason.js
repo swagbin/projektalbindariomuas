@@ -13,7 +13,7 @@ document.getElementById("imgGame").setAttribute("src",bild[index]);
 
 index++;
 
-},500);
+},3000);
 }
  function stopInterval(){
     clearInterval(intervalId);
