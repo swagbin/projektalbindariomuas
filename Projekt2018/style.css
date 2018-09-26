@@ -122,36 +122,6 @@ nav ul li a {
 
 }
 
-.bildspel {
-    width: 100%;
-    display: inline-block;
-    position: relative;
-    background: black;
-
-
-}
-#slideshow {
-    margin-left: auto;
-	margin-right: auto;
-	display: block;
-
-}
-.knappdiv {
-    padding: 10px;
-    height: 120px;
-    background: black;
-    margin: 0;
-    display: flex;
-  align-items: center;
-  justify-content: center;
-    
-    
-}
-.knappdiv input {
-    padding: 10px;
-    margin: 0;
-    display: inline-block;
-}
 .column2 {
     height: 80%; 
     width: 80%; 
