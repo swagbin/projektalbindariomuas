@@ -59,33 +59,35 @@ h4{
     top:50%; 
     left:50%;
     color: aqua;
+    background: black;
+    align-items: center;
+    justify-content: center;   
 }
+
 #textDescription{
 color: #fff;
 text-align: center;
 }
+
 nav {
     position: fixed;
     width: 100%;
     line-height: 60px;
 }
+
 #bild{
     width: 100%;
     display: block;
 position: relative;
 background: black;
 }
+
 #imgGame{
 margin-left:auto;
 margin-right: auto;
 display: block; 
 }
 
-#knapp {
-    background: black;
-    align-items: center;
-    justify-content: center;   
-}
 nav ul {
     line-height: 40px;
     list-style: none;
@@ -126,10 +128,10 @@ nav ul li a {
 
 .column2 {
     height: 80%; 
-    width: 80%; 
-    top: 10%; 
-    left: 10%; 
-    background: rgba(204, 204, 204, 0);
+    width: 95%; 
+    margin:2vw; 
+    
+   background: rgba(204, 204, 204, 0);
     position: absolute;
     border-radius: 25px;
     display:none;
@@ -187,9 +189,6 @@ nav ul li a {
 
 .menuaboutus {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
     float: left; 
 }
 
@@ -352,12 +351,6 @@ z-index: 10;
         
     }
 	
-.img2{
-	display:none;}
-
-.namnlista{
-	display:none;
-	}
 	
     #knapp{
         height:20px; 
@@ -406,22 +399,17 @@ z-index: 10;
     }
 	
     .column2 {
-        margin: 0;
-        padding: 0;
+       width:90%;
         font-size: sans-serif;
 	
 
     }
-   
-    .border {
-        display:block;
-        margin:auto;
-        width: 160px;
-        height: 3px;
-        background: #fff;
-        margin-bottom: 40px;
-        
-    }
+   .img2{
+	display:none;}
+
+.namnlista{
+	display:none;
+	}
 	.menuabutus{
 	display:none;}
 
