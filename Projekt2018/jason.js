@@ -32,6 +32,11 @@ $(function() {
       
      
       });
+       jQuery('.skillbar').each(function(){
+        jQuery(this).find('.skillbar-bar').animate({
+            width:jQuery(this).attr('data-percent')
+        },2000);
+    });
       
       $("#knapp").on("click",function(){
         if(ändring===false){
