@@ -20,6 +20,8 @@ header {
 }
 
 
+}
+
 
 
 .wrapperContact {
@@ -229,20 +231,20 @@ nav ul li a {
 .aboutuscontainer {
 
   width: 100%;
-  
+  background:black;
 
 }
 
 #Dario {
     height: 300px;
-    background:white;
+    background:black;
     
 
 }
 
 #Muas {
     height: 300px;
-    background:palegoldenrod;
+    background:black;
 }
 .skillbar {
     font-family: 'Open Sans', 'sans-serif';
