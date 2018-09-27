@@ -11,6 +11,7 @@ z-index: 10;
 body {
     font-family: 'Lucida Sans', sans-serif;
     font-weight: lighter;
+	background: black;
 }
 h5{
     color:white;
@@ -26,17 +27,10 @@ header {
     background-size: cover;
 }
 
-
-
-
-
-
 .wrapperContact {
     background: url(contactbgg.jpeg) no-repeat;
     background-size: cover;
 }
-
-
 
 
 .contentIndex {
@@ -58,8 +52,13 @@ h4{
     color:seashell;
     font-size: 20px;
 }
-h5{
+h5
+{
     color:white;
+	text-align: center;
+	font-size: 20px;
+	text-transform: uppercase;
+	
 }
 #knapp{
     height:20px; 
@@ -255,6 +254,16 @@ nav ul li a {
     height: 300px;
     background:black;
 }
+
+
+#Albin {
+    height: 300px;
+    background:palegreen;
+
+
+}
+
+
 .skillbar {
     font-family: 'Open Sans', 'sans-serif';
       position:relative;
@@ -329,14 +338,6 @@ nav ul li a {
   }
 
 
-#Albin {
-    height: 300px;
-    background:palegreen;
-
-
-}
-
-
 .img2 {
 
     width: 100%;
@@ -404,10 +405,6 @@ z-index: 10;
           display: block;
     }
 
-    #karta {
-        display: none;
-    }
-	
     .column2 {
        width:90%;
         font-size: sans-serif;
@@ -420,6 +417,7 @@ z-index: 10;
 .namnlista{
 	display:none;
 	}
+	
 	.menuabutus{
 	display:none;}
 
