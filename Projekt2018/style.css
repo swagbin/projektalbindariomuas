@@ -13,6 +13,10 @@ body {
 }
 h5{
     color:white;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    
 }
 header {
     width: 100%;
