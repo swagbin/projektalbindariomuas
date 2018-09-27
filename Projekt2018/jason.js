@@ -95,7 +95,7 @@ if (namn == '')
 }
      else if(namn.length < 3){
         $('.nameText').html("Det måste vara minst 3 tecken");
-        $('nameText').css("color", "red");
+        $('.nameText').css("color", "red");
 }
 else if (/^[0-9]+$/.test(namn)){
     $('.nameText').html("skriv bokstäver i namn fältet");
