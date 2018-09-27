@@ -270,13 +270,22 @@ nav ul li a {
 
 
 @media(max-width: 768px) {
-  nav{
+nav{
 z-index: 10;
 }
-	#imgGame{
+
+#imgGame{
         width: 50%;
         
     }
+	
+.img2{
+	display:none;}
+
+.namnlista{
+	display:none;
+	}
+	
     #knapp{
         height:20px; 
         width:100px; 
