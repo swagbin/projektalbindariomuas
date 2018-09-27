@@ -1,7 +1,8 @@
 var index=0;
 var bild=["2.jpg","3.jpg","1.jpg"];
 var intervalId;
-var text=["här kommer den andra beskrivning","trejde","här kommer första beskrivning"];
+var text=["This is a website we made for a design company who decided to make their store an E-bussiness","This is a website-improvement we made a for a company before the release of a new product."
+          ,"This is one of our employees in work doing an ER-model which is a important park of a system-development project."];
 
 function bilder(){
 
