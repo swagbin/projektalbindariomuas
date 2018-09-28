@@ -111,7 +111,7 @@ nav ul {
 }
 
 nav.black ul {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: black;
 }
 
 nav ul li {
