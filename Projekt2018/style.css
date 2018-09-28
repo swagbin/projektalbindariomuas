@@ -156,6 +156,7 @@ nav ul li a {
     font-size: 35px;
     cursor: pointer;
     padding: 20px;
+    text-decoration: underline; 
     
 }
 
