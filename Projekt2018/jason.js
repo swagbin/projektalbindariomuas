@@ -50,6 +50,12 @@ $(function() {
             ändring=false;   
         }
     });
+           $('.vilka').on("mouseover", function(){
+        $('.vilka').css("color","purple");
+    });
+    $('.vilka').on("mouseout", function(){
+        $('.vilka').css("color","white");
+    });
      
      $(document).ready(function() {
             $(".menu-icon").on("click", function() {
