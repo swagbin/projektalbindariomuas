@@ -30,7 +30,37 @@ $(function() {
       $('.vilka').on('click', function() {
       $(".column2").slideToggle(1500);
       $('.column2').show();;
+      ///storage data 
+        $("textarea").focusout(function regText(){
+        var textData=document.getElementById("meddelande").value;
+        localStorage.setItem("text",textData);
       
+      })
+////storage data
+      $("input").focusout(function regData(){
+
+        var namnData=document.getElementById("name").value;
+        localStorage.setItem("namn",namnData);
+        var emailData=document.getElementById("email").value;
+        localStorage.setItem("email",emailData);
+        var nummerData=document.getElementById("number").value;
+        localStorage.setItem("nummer",nummerData);
+        
+    
+        
+        
+    
+    
+
+});
+///remove data
+$("#bk1").on("click",function(){
+localStorage.removeItem("namn");
+localStorage.removeItem("email");
+localStorage.removeItem("nummer");
+localStorage.removeItem("text");
+});
+
      
       });
        jQuery('.skillbar').each(function(){
@@ -177,6 +207,30 @@ function validering(){
         alert("fyll i alla fälet för att skicka formläret");
       }
     }
+//upload data from localstorage//
+ function loadData(){
+        var sparatNamn=localStorage.getItem("namn");
+        var  sparatEmail=localStorage.getItem("email");
+        var sparatNummer=localStorage.getItem("nummer");
+        var sparatText=localStorage.getItem("text");
+   
+    if(sparatNamn == null || sparatEmail== null ||sparatNummer==null
+        ||sparatText==null){}
+        else{
+        if(sparatNamn ){
+            document.getElementById("name").value=sparatNamn;
+        }
+        if(sparatEmail){
+            document.getElementById("email").value=sparatEmail;
+        }
+        if(sparatNummer){
+            document.getElementById("number").value=sparatNummer;
+        }
+        if(sparatText){
+            document.getElementById("meddelande").value=sparatText;
+        }
+    }
+}
 
 
 
