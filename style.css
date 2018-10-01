@@ -17,6 +17,14 @@ header {
     background: url(road.jpeg) no-repeat 50% 50%;
     background-size: cover;
 }
+iframe{
+    width:300 px;
+     height:250 px; 
+   
+}
+label{
+    color: white;
+}
 .menu-icon {
     line-height: 60px;
     width: 100%;
