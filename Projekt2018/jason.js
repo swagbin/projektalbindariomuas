@@ -29,7 +29,8 @@ $(function() {
       ändring=true;
       $('.vilka').on('click', function() {
       $(".column2").slideToggle(1500);
-      $('.column2').show();;
+      $('.column2').show();
+                });
       ///storage data 
         $("textarea").focusout(function regText(){
         var textData=document.getElementById("meddelande").value;
@@ -62,7 +63,7 @@ localStorage.removeItem("text");
 });
 
      
-      });
+      
        jQuery('.skillbar').each(function(){
         jQuery(this).find('.skillbar-bar').animate({
             width:jQuery(this).attr('data-percent')
