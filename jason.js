@@ -78,8 +78,8 @@ $(document).ready(function(){
     }); 
 });
 
-       jQuery('.skillbar').each(function(){
-        jQuery(this).find('.skillbar-bar').animate({
+       jQuery('.progressbar').each(function(){
+        jQuery(this).find('.progressbar-bar').animate({
             width:jQuery(this).attr('data-percent')
         },2000);
     });
