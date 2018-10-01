@@ -240,7 +240,7 @@ h5{
 	width: 100%;
 	transition: width 0.3s;
 }
-.skillbar {
+.progressbar {
     font-family: 'Open Sans', 'sans-serif';
       position:relative;
       display:block;
@@ -263,7 +263,7 @@ h5{
       transition-property:width, background-color;
   }
 
-  .skillbar-title {
+  .progressbar-title {
       position:absolute;
       top:0;
       left:0;
@@ -280,7 +280,7 @@ h5{
       background: #00a8ff;
   }
 
-  .skillbar-title span {
+  .progressbar-title span {
       display:block;
       background:rgba(0, 0, 0, 0.1);
       padding:0 20px;
@@ -293,7 +293,7 @@ h5{
       border-top-left-radius:3px;
       border-bottom-left-radius:3px;
   }
-  .skillbar-bar {
+  .progressbar-bar {
       height:35px;
       width:0px;
       background:#6adcfa;
@@ -302,7 +302,7 @@ h5{
       -webkit-border-radius:3px;
       background: #00a8ff;
   }
-  .skill-bar-percent {
+  .progressbar-percent {
       position:absolute;
       right:10px;
       top:0;
