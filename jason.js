@@ -224,29 +224,28 @@ function validering(){
       }
     }
 
-    function loadData(){
-        var sparatNamn=localStorage.getItem("namn");
-        var  sparatEmail=localStorage.getItem("email");
-        var sparatNummer=localStorage.getItem("nummer");
-        var sparatText=localStorage.getItem("text");
-   
-    if(sparatNamn == null || sparatEmail== null ||sparatNummer==null
-        ||sparatText==null){}
-        else{
-        if(sparatNamn ){
-            document.getElementById("name").value=sparatNamn;
-        }
-        if(sparatEmail){
-            document.getElementById("email").value=sparatEmail;
-        }
-        if(sparatNummer){
-            document.getElementById("number").value=sparatNummer;
-        }
-        if(sparatText){
-            document.getElementById("meddelande").value=sparatText;
-        }
+function loadData() {
+
+    var sparatNamn = localStorage.getItem("namn");
+    var sparatEmail = localStorage.getItem("email");
+    var sparatNummer = localStorage.getItem("nummer");
+    var sparatText = localStorage.getItem("text");
+
+    if (sparatNamn != null) {
+
+        document.getElementById("name").value = sparatNamn;
+    }
+    if (sparatEmail != null) {
+        document.getElementById("email").value = sparatEmail;
+    }
+    if (sparatEmail != null) {
+        document.getElementById("number").value = sparatNummer;
+    }
+    if (sparatText != null) {
+        document.getElementById("meddelande").value = sparatText;
     }
 }
+
 
 
 
