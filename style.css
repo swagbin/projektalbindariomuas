@@ -2,16 +2,124 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-	background-color:black;
+    background-color:black;
+    font-family: 'Lucida Sans', sans-serif;
+    font-weight: lighter;
 }
+/**** Menu beginning ****/
+.current {
+    border-style: solid;
+    border-color:seashell;   
+}
+header {
+    width: 100%;
+    height: 42vh;
+    background: url(road.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+        z-index: 10;
+        
+}
+nav ul {
+    line-height: 40px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: 1s;
+}
+nav.black ul {
+    background-color: black;
+}
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;;
+}
+nav ul li a {
+    text-decoration: none;
+    color:seashell;
+    font-size: 16px;   
+}
+/**** Menu ending ****/
 
+/**** Homepage beginning ****/
+.contentIndex {
+    width: 60%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    color:white;
+}
+/**** Homepage ending ****/
+
+
+/**** Portfolio beginning ****/
+#imgGame{
+    margin-left:auto;
+    margin-right: auto;
+    display: block; 
+    }
+    #textDescription{
+        color: #fff;
+        text-align: center;
+        }
+        #slideshowbutton{
+            height:20px; 
+            width:100px; 
+            margin: -20px -50px; 
+            position:relative;
+            top:50%; 
+            left:50%;
+            color: aqua;
+            background: black;
+            align-items: center;
+            justify-content: center;   
+        }
+
+/**** Portfolio ending ****/
+
+
+/**** Aboutus beginning ****/
+
+.aboutusheader {
+    text-align: center;
+    color: white;
+    margin:0;
+    font-size: 35px;
+    cursor: pointer;
+    padding: 20px;
+    
+}
+.textaboutus {
+    color:white;
+    font-size: 20px;
+}
 #Albin {
     width: 60%;
     margin: auto;
     overflow: hidden;
-    height: 700px;
+    height: 500px;
     border: solid black 4px;
-    color: black;
+    color: white;
 }
 #firstdivalbin{
     width: 100%;
@@ -24,131 +132,58 @@ html, body {
     overflow:hidden;
     
 }
-
 #albinbild {
     max-width: 100%;
 }
-
- nav{
-z-index: 10;
+#Dario {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    height: 500px;
+    border: solid black 4px;
+    color: white;
 }
+#firstdivdario{
+    width: 100%;
+    overflow:hidden;
 
-body {
-    font-family: 'Lucida Sans', sans-serif;
-    font-weight: lighter;
-	background: black;
+}
+#seconddivdario{
+    width: 25%;
+    float:left;
+    overflow:hidden;
+    
+}
+#dariobild {
+    max-width: 100%;
+}
+#Muas {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    height: 500px;
+    border: solid black 4px;
+    color: white;
+}
+#firstdivmuas{
+    width: 100%;
+    overflow:hidden;
+
+}
+#seconddivmuas{
+    width: 25%;
+    float:left;
+    overflow:hidden;
+    
+}
+#muasbild {
+    max-width: 100%;
 }
 h5{
-    color:black;
+    color:white;
     text-align: center;
     font-size: 20px;
     text-transform: uppercase;
-    
-}
-header {
-    width: 100%;
-    height: 72vh;
-    background: url(road.jpeg) no-repeat 50% 50%;
-    background-size: cover;
-}
-
-.wrapperContact {
-    background: url(contactbgg.jpeg) no-repeat;
-    background-size: cover;
-}
-
-
-.contentIndex {
-    width: 94%;
-    margin: 4em auto;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: justify;
-    color:white;
-    
-}
-h1{
-     text-align: center;
-     margin: 0;
-     color: white;
-     padding: 20px;
-
-}
-h4{
-    color:seashell;
-    font-size: 20px;
-}
-h5
-{
-    color:black;
-	text-align: center;
-	font-size: 20px;
-	text-transform: uppercase;
-	
-}
-#knapp{
-    height:20px; 
-    width:100px; 
-    margin: -20px -50px; 
-    position:relative;
-    top:50%; 
-    left:50%;
-    color: aqua;
-    background: black;
-    align-items: center;
-    justify-content: center;   
-}
-
-#textDescription{
-color: #fff;
-text-align: center;
-}
-
-nav {
-    position: fixed;
-    width: 100%;
-    line-height: 60px;
-}
-
-#bild{
-    width: 100%;
-    display: block;
-position: relative;
-background: black;
-}
-
-#imgGame{
-margin-left:auto;
-margin-right: auto;
-display: block; 
-}
-
-nav ul {
-    line-height: 40px;
-    list-style: none;
-    background: rgba(0, 0, 0, 0);
-    overflow: hidden;
-    color: #fff;
-    padding: 0;
-    text-align: center;
-    margin: 0;
-    transition: 1s;
-}
-
-nav.black ul {
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-nav ul li {
-    display: inline-block;
-    padding: 16px 40px;;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color:seashell;
-    font-size: 16px;
-    
     
 }
 .column1 {
@@ -157,103 +192,33 @@ nav ul li a {
     background: url(001.jpeg);
     position: relative;
     background-size: cover;
-
-
 }
-
 .column2 {
     height: 80%; 
     width: 95%; 
     margin:2vw; 
-    
    background: rgba(204, 204, 204, 0);
     position: absolute;
     border-radius: 25px;
     display:none;
-    
-
 }
-
-.vilka {
-    text-align: center;
-    color: white;
-    margin:0;
-    font-size: 35px;
-    cursor: pointer;
-    padding: 20px;
-    
-}
-
-.textaboutus {
-    color:white;
-    font-size: 20px;
-}
-
-.menu-icon {
-    line-height: 60px;
-    width: 100%;
-    background: #000;
-    text-align: right;
-    box-sizing: border-box;
-    padding: 15px 24px;
-    cursor: pointer;
-    color: #fff;
-    display: none;
-}
-
-#fem {
-    text-align:center;
-
-}
-
-.current {
-    border-style: solid;
-    border-color:seashell;
-    
-
-}
-
-
-.map-responsive {
-    position: relative;
-    height: 400px;
-    overflow: hidden;
-}
-.map-responsive iframe {
-    position: absolute;
-    width: 40%;
-    height: 70%;
-    top: 20%;
-    left: 30%;
-}
-
-.menuaboutus {
-    position: absolute;
-    float: left; 
-}
-
 .menuaboutus li {
 	display: inline-block;
     user-select: none;
     border-radius: 25px;
     border: 2px white;
     padding: 5px;
-    
 }
-
 .menuaboutus li a {
 	text-decoration: none;
 	display: block;
 	color: white;
-	font-family: "Source Sans Pro" sans-serif;
 	font-weight: lighter;
 	font-size: 28px;
     padding: 0 20px;
     margin-left:auto;
     margin-right: auto;;
-
 }
-
 .cool-link::after {
 	content: " ";
 	display: block;
@@ -266,24 +231,6 @@ nav ul li a {
 	width: 100%;
 	transition: width 0.3s;
 }
-
-.aboutuscontainer {
-
-  width: 100%;
-  background: white;
-  color: black;
-
-}
-
-#Dario {
-    height: 300px;  
-}
-
-#Muas {
-    height: 300px;
-}
-
-
 .skillbar {
     font-family: 'Open Sans', 'sans-serif';
       position:relative;
@@ -306,7 +253,7 @@ nav ul li a {
       -o-transition-property:width, background-color;
       transition-property:width, background-color;
   }
-  
+
   .skillbar-title {
       position:absolute;
       top:0;
@@ -322,7 +269,7 @@ nav ul li a {
       border-top-left-radius:3px;
       border-bottom-left-radius:3px;
   }
-  
+
   .skillbar-title span {
       display:block;
       background:rgba(0, 0, 0, 0.1);
@@ -336,7 +283,6 @@ nav ul li a {
       border-top-left-radius:3px;
       border-bottom-left-radius:3px;
   }
-  
   .skillbar-bar {
       height:35px;
       width:0px;
@@ -345,7 +291,6 @@ nav ul li a {
       -moz-border-radius:3px;
       -webkit-border-radius:3px;
   }
-  
   .skill-bar-percent {
       position:absolute;
       right:10px;
@@ -356,34 +301,76 @@ nav ul li a {
       color:#444;
       color:rgba(0, 0, 0, 0.4);
   }
-
-
+  #scrollUp {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#3498db;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+}
+ /*   Css som skapar en flärp i bordern */
+    #scrollUp span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+} 
+/**** Aboutus ending ****/
+/**** Contact beginning ****/
+#validering {
+    text-align:center;
+}
+.map-responsive {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+.map-responsive iframe {
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    top: 20%;
+    left: 30%;
+}
+/**** Contact ending ****/
+h1{
+     text-align: center;
+     margin: 0;
+     color: white;
+     padding: 20px;
+}
 .img2 {
 
     width: 100%;
     filter: grayscale(100%);
     transition: 0.4s all;
-    
 }
-
 .img2:hover {
    
     filter: none;
  }
-
-
 @media(max-width: 768px) {
 nav{
 z-index: 10;
 }
-
-
+#Albin, #Dario, #Muas {
+     height: 700px;
+}
 #imgGame{
-        width: 50%;
-        
+        width: 50%;    
     }
-	
-	
     #knapp{
         height:20px; 
         width:100px; 
@@ -406,40 +393,29 @@ z-index: 10;
           max-height: 0px;
           background: #000;
     }
-
     nav.black ul {
           background: #000;
     }
-
     .showing {
           max-height: 34em;
     }
-
     nav ul li {
           box-sizing: border-box;
           width: 100%;
           padding: 14px;
           text-align: center;
     }
-
     .menu-icon {
           display: block;
     }
-
     .column2 {
        width:90%;
-        font-size: sans-serif;
-	
-
     }
    .img2{
 	display:none;}
-
 .namnlista{
 	display:none;
 	}
-	
 	.menuabutus{
 	display:none;}
-
 }
