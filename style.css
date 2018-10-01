@@ -422,11 +422,14 @@ z-index: 10;
     .column2 {
        width:90%;
     }
-   .img2{
-	display:none;}
-.namnlista{
-	display:none;
-	}
-	.menuabutus{
-	display:none;}
+ .column1 {
+    width: 100%;
+    height: 350vw;
+    background: url(001.jpeg);
+    position: relative;
+    background-size: cover;
+}
+.sectionaboutus{
+    height: 350vw;
+}
 }
