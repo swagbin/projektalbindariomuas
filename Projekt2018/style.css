@@ -250,25 +250,52 @@ nav ul li a {
 
 }
 
-#Dario {
-    height: 300px;
-    background:black;
-    
 
+#Dario {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    height: 500px;
+    border: solid black 4px;
+    color: black;
 }
 
 #Muas {
-    height: 300px;
-    background:black;
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    height: 500px;
+    border: solid black 4px;
+    color: black;
 }
+
+
 
 
 #Albin {
-    height: 300px;
-    background:black;
-
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    height: 500px;
+    border: solid black 4px;
+    color: black;
+}
+#firstdivalbin{
+    width: 100%;
+    overflow:hidden;
 
 }
+#seconddivalbin{
+    width: 25%;
+    float:left;
+    overflow:hidden;
+    
+}
+
+#albinbild {
+    max-width: 100%;
+}
+
 
 
 .skillbar {
@@ -427,5 +454,12 @@ z-index: 10;
 	
 	.menuabutus{
 	display:none;}
+	
+	
+    #Albin, #Muas, #Dario {
+
+        height: 700px;
+        
+        }
 
 }
