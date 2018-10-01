@@ -17,14 +17,6 @@ header {
     background: url(road.jpeg) no-repeat 50% 50%;
     background-size: cover;
 }
-iframe{
-    width:300 px;
-     height:250 px; 
-   
-}
-label{
-    color: white;
-}
 .menu-icon {
     line-height: 60px;
     width: 100%;
@@ -115,6 +107,7 @@ nav ul li a {
     font-size: 35px;
     cursor: pointer;
     padding: 20px;
+    text-decoration: underline;
     
 }
 .textaboutus {
@@ -276,6 +269,7 @@ h5{
       -moz-border-radius-bottomleft:3px;
       border-top-left-radius:3px;
       border-bottom-left-radius:3px;
+      background: #00a8ff;
   }
 
   .skillbar-title span {
@@ -298,6 +292,7 @@ h5{
       border-radius:3px;
       -moz-border-radius:3px;
       -webkit-border-radius:3px;
+      background: #00a8ff;
   }
   .skill-bar-percent {
       position:absolute;
