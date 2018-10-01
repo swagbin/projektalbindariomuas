@@ -24,6 +24,22 @@ index++;
 
 }  
 
+// funktion för knapp att scrolla upp på sidan
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scrollUp').fadeIn(); 
+        } else { 
+            $('#scrollUp').fadeOut(); 
+        } 
+    }); 
+    $('#scrollUp').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+
+
 
 $(function() {
       ändring=true;
