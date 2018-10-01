@@ -2,13 +2,49 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
+	background-color:black;
+}
+
+#Albin {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    height: 700px;
+    border: solid black 4px;
+    color: black;
+}
+#firstdivalbin{
+    width: 100%;
+    overflow:hidden;
+
+}
+#seconddivalbin{
+    width: 25%;
+    float:left;
+    overflow:hidden;
+    
+}
+
+#albinbild {
+    max-width: 100%;
+}
+
+ nav{
+z-index: 10;
 }
 
 body {
     font-family: 'Lucida Sans', sans-serif;
     font-weight: lighter;
+	background: black;
 }
-
+h5{
+    color:black;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    
+}
 header {
     width: 100%;
     height: 72vh;
@@ -16,15 +52,10 @@ header {
     background-size: cover;
 }
 
-
-
-
 .wrapperContact {
     background: url(contactbgg.jpeg) no-repeat;
     background-size: cover;
 }
-
-
 
 
 .contentIndex {
@@ -33,6 +64,7 @@ header {
     font-size: 20px;
     line-height: 30px;
     text-align: justify;
+    color:white;
     
 }
 h1{
@@ -46,11 +78,49 @@ h4{
     color:seashell;
     font-size: 20px;
 }
+h5
+{
+    color:black;
+	text-align: center;
+	font-size: 20px;
+	text-transform: uppercase;
+	
+}
+#knapp{
+    height:20px; 
+    width:100px; 
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+    color: aqua;
+    background: black;
+    align-items: center;
+    justify-content: center;   
+}
+
+#textDescription{
+color: #fff;
+text-align: center;
+}
 
 nav {
     position: fixed;
     width: 100%;
     line-height: 60px;
+}
+
+#bild{
+    width: 100%;
+    display: block;
+position: relative;
+background: black;
+}
+
+#imgGame{
+margin-left:auto;
+margin-right: auto;
+display: block; 
 }
 
 nav ul {
@@ -91,52 +161,22 @@ nav ul li a {
 
 }
 
-.bildspel {
-    width: 100%;
-    display: inline-block;
-    position: relative;
-    background: black;
-
-
-}
-#slideshow {
-    margin-left: auto;
-	margin-right: auto;
-	display: block;
-
-}
-.knappdiv {
-    padding: 10px;
-    height: 120px;
-    background: black;
-    margin: 0;
-    display: flex;
-  align-items: center;
-  justify-content: center;
-    
-    
-}
-.knappdiv input {
-    padding: 10px;
-    margin: 0;
-    display: inline-block;
-}
 .column2 {
     height: 80%; 
-    width: 80%; 
-    top: 10%; 
-    left: 10%; 
-    background: rgba(204, 204, 204, 0);
+    width: 95%; 
+    margin:2vw; 
+    
+   background: rgba(204, 204, 204, 0);
     position: absolute;
     border-radius: 25px;
     display:none;
+    
 
 }
 
 .vilka {
     text-align: center;
     color: white;
-
     margin:0;
     font-size: 35px;
     cursor: pointer;
@@ -179,20 +219,17 @@ nav ul li a {
     height: 400px;
     overflow: hidden;
 }
-
 .map-responsive iframe {
     position: absolute;
-    width: 50%;
-    height: 70%; 
-    top: 20%; 
-    left: 25%; 
+    width: 40%;
+    height: 70%;
+    top: 20%;
+    left: 30%;
 }
 
 .menuaboutus {
     position: absolute;
-    top: 50%;
-    left: 50%;
-	transform: translateX(-50%) translateY(-50%);
+    float: left; 
 }
 
 .menuaboutus li {
@@ -201,16 +238,20 @@ nav ul li a {
     border-radius: 25px;
     border: 2px white;
     padding: 5px;
+    
 }
 
 .menuaboutus li a {
 	text-decoration: none;
-	display: inline-block;
+	display: block;
 	color: white;
 	font-family: "Source Sans Pro" sans-serif;
 	font-weight: lighter;
 	font-size: 28px;
-	padding: 0 20px;
+    padding: 0 20px;
+    margin-left:auto;
+    margin-right: auto;;
+
 }
 
 .cool-link::after {
@@ -229,40 +270,132 @@ nav ul li a {
 .aboutuscontainer {
 
   width: 100%;
+  background: white;
+  color: black;
+
+}
+
+#Dario {
+    height: 300px;  
+}
+
+#Muas {
+    height: 300px;
+}
+
+
+.skillbar {
+    font-family: 'Open Sans', 'sans-serif';
+      position:relative;
+      display:block;
+      margin-bottom:15px;
+      width:100%;
+      background:#eee;
+      height:35px;
+      border-radius:3px;
+      -moz-border-radius:3px;
+      -webkit-border-radius:3px;
+      -webkit-transition:0.4s linear;
+      -moz-transition:0.4s linear;
+      -ms-transition:0.4s linear;
+      -o-transition:0.4s linear;
+      transition:0.4s linear;
+      -webkit-transition-property:width, background-color;
+      -moz-transition-property:width, background-color;
+      -ms-transition-property:width, background-color;
+      -o-transition-property:width, background-color;
+      transition-property:width, background-color;
+  }
   
+  .skillbar-title {
+      position:absolute;
+      top:0;
+      left:0;
+      font-weight:bold;
+      font-size:13px;
+      color:#fff;
+      background:#6adcfa;
+      -webkit-border-top-left-radius:3px;
+      -webkit-border-bottom-left-radius:4px;
+      -moz-border-radius-topleft:3px;
+      -moz-border-radius-bottomleft:3px;
+      border-top-left-radius:3px;
+      border-bottom-left-radius:3px;
+  }
+  
+  .skillbar-title span {
+      display:block;
+      background:rgba(0, 0, 0, 0.1);
+      padding:0 20px;
+      height:35px;
+      line-height:35px;
+      -webkit-border-top-left-radius:3px;
+      -webkit-border-bottom-left-radius:3px;
+      -moz-border-radius-topleft:3px;
+      -moz-border-radius-bottomleft:3px;
+      border-top-left-radius:3px;
+      border-bottom-left-radius:3px;
+  }
+  
+  .skillbar-bar {
+      height:35px;
+      width:0px;
+      background:#6adcfa;
+      border-radius:3px;
+      -moz-border-radius:3px;
+      -webkit-border-radius:3px;
+  }
+  
+  .skill-bar-percent {
+      position:absolute;
+      right:10px;
+      top:0;
+      font-size:11px;
+      height:35px;
+      line-height:35px;
+      color:#444;
+      color:rgba(0, 0, 0, 0.4);
+  }
 
-}
 
-.Dario {
-    height: 768px;
-    background:white;
+.img2 {
+
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.4s all;
     
-
 }
 
-.Muas {
-    height: 768px;
-    background:palegoldenrod;
-    
-
-}
-
-.Albin {
-    height: 768px;
-    background:palegreen;
-
-
-}
-
-
-
-
-
-
+.img2:hover {
+   
+    filter: none;
+ }
 
 
 @media(max-width: 768px) {
+nav{
+z-index: 10;
+}
 
+
+#imgGame{
+        width: 50%;
+        
+    }
+	
+	
+    #knapp{
+        height:20px; 
+        width:100px; 
+        margin: -20px -50px; 
+        position:relative;
+        top:50%; 
+        left:50%;
+        color: aqua;
+    }
+    #sectionaboutus{
+        z-index: 10;
+    }
     .logo {
           position: fixed;
           top: 0;
@@ -293,5 +426,20 @@ nav ul li a {
           display: block;
     }
 
-  
+    .column2 {
+       width:90%;
+        font-size: sans-serif;
+	
+
+    }
+   .img2{
+	display:none;}
+
+.namnlista{
+	display:none;
+	}
+	
+	.menuabutus{
+	display:none;}
+
 }
