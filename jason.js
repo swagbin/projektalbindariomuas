@@ -4,6 +4,8 @@ var intervalId;
 var text = ["This is a website we made for a design company who decided to make their store an E-bussiness", "This is a website-improvement we made a for a company before the release of a new product."
     , "This is one of our employees in work doing an ER-model which is a important part of a system-development project."];
 
+// Our SlideShow function, iterates our picture collection thats in a arraylist until there is no more pictures to iterate
+
 function pictures() {
 
     intervalId = setInterval(
@@ -27,7 +29,7 @@ function stopInterval() {
 
 
 
-// funktion för knapp att scrolla upp på sidan
+// Function for the button that can take you to the top of the page on every page 
 $(document).ready(function () {
     change = true;
     $('.aboutusheader').on('click', function () {
@@ -37,7 +39,7 @@ $(document).ready(function () {
 
     });
 
-
+// The function that saves userinput data as a LocalStorage, saved locally until the user presses sumbit. 
 
     $("textarea").focusout(function regText() {
         var textData = document.getElementById("meddelande").value;
@@ -108,7 +110,7 @@ $(document).ready(function () {
         }
     });
 
-    $('#name').keyup(() => { //valedera vad det står i namn text fältet//
+    $('#name').keyup(() => { //Validates that there is text characters in the user input windows, and not for e.g numbers//
         valderaNamn();
     });
     $("#email").keyup(() => {
@@ -121,6 +123,8 @@ $(document).ready(function () {
         valederaMeddelande();
     });
 
+    // Function that removes the top navigationbar transparency when scrolling down. Nav bar becomes all black. 
+    
     $(window).on("scroll", function () {
         if ($(window).scrollTop()) {
             $('nav').addClass('black');
@@ -142,19 +146,19 @@ function valderaNamn() {
 
 
     if (namn == '') {
-        $(".nameText").html("fyll i ditt namn");
+        $(".nameText").html("Enter your name");
         $(".nameText").css("color", "red");
     }
     else if (namn.length < 3) {
-        $('.nameText').html("Det måste vara minst 3 tecken");
+        $('.nameText').html("Must be atlest 3 characters");
         $('.nameText').css("color", "red");
     }
     else if (/^[0-9]+$/.test(namn)) {
-        $('.nameText').html("skriv bokstäver i namn fältet");
+        $('.nameText').html("Write textcharacters only!");
         $('.nameText').css("color", "red");
     }
     else {
-        $('.nameText').html("O.K");
+        $('.nameText').html("OK");
         $('.nameText').css("color", "green");
     }
 
@@ -164,34 +168,34 @@ function valederaEpost() {
     var epost = document.getElementById("email").value;
 
     if (epost == "") {
-        $(".emailText").html("fyll i e-post fältet");
+        $(".emailText").html("Fill the email field");
         $(".emailText").css("color", "red");
     }
     else if (!epost.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/)) {
-        $(".emailText").html("skriv in rätt epost format");
+        $(".emailText").html("Write the correct format e.g @domain.com");
         $(".emailText").css("color", "red");
     }
     else {
-        $(".emailText").html("o.k");
+        $(".emailText").html("OK");
         $(".emailText").css("color", "green");
     }
 }
 function valederaTelefonnummer() {
     var telefonnummer = document.getElementById("number").value;
     if (telefunnummer = 0) {
-        $(".nummerText").html("skriv in ditt telefonnummer med 10 siffror");
+        $(".nummerText").html("Write your telephonenumber, use 10 numbers");
         $(".nummerText").css("color", "red");
     }
     else if (!telefonnummer.match(/^[0-9\-\+]{9,10}$/)) {
-        $(".nummerText").html("måste innehålla bara siffror");
+        $(".nummerText").html("Must only contain numbers");
         $(".nummerText").css("color", "red");
     }
     else if (telefonnummer.length <= 13) {
-        $(".nummerText").html("o.k");
+        $(".nummerText").html("OK");
         $(".nummerText").css("color", "green");
     }
     else {
-        (".nummerText").html("o.k");
+        (".nummerText").html("OK");
         $(".nummerText").css("color", "green");
     }
 }
@@ -199,15 +203,15 @@ function valederaTelefonnummer() {
 function valederaMeddelande() {
     var text = document.getElementById("meddelande").value;
     if (text == "") {
-        $(".meddelandeText").html("beskriv ditt meddelande");
+        $(".meddelandeText").html("Write your message");
         $(".meddelandeText").css("color", "red");
     }
     else if (text.length < 20) {
-        $(".meddelandeText").html("beskriv mera");
+        $(".meddelandeText").html("Write more please");
         $(".meddelandeText").css("color", "red");
     }
     else {
-        $(".meddelandeText").html("O.K");
+        $(".meddelandeText").html("OK");
         $(".meddelandeText").css("color", "green");
     }
 }
@@ -218,7 +222,7 @@ function validering() {
     var text = document.getElementById("meddelande").value;
 
     if (namn == '' && email == '' && nummer == '' && text == '') {
-        alert("fyll i alla fälet för att skicka formläret");
+        alert("Please fill all forms to submit");
     }
 }
 
