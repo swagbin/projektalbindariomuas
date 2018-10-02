@@ -6,6 +6,34 @@ html, body {
     font-family: 'Lucida Sans', sans-serif;
     font-weight: lighter;
 }
+/****list designe*****/
+#lista {
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid white;
+    overflow: hidden;
+    display: inline-block;
+}
+th{
+    color: white;
+}
+td{
+    color: white;
+}
+
+#table1 {
+    width: 50%;
+    float:left;
+}
+#lista h4, #lista p{
+  text-align: center;
+    color: white;
+}
+#table2 {
+    width: 50%;
+    float:right;
+}
+
 /**** Menu beginning ****/
 .current {
     border-style: solid;
