@@ -38,7 +38,7 @@ $(document).ready(function () {
 
 
     });
-      });
+   
     $.getJSON('https://github-trending-api.now.sh/repositories?language=javascript&sort=stars&order=desc&since=weekly',
     function (data){
         var javascript_trends = "";
