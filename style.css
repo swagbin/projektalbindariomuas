@@ -383,6 +383,26 @@ h1{
 nav{
 z-index: 10;
 }
+	
+	#list{
+    width: 25%;
+    margin: 0 auto;
+    border: 2px solid white;
+  
+   height: 50%;
+   overflow: hidden;
+}
+#table1 {
+    width: 50%;
+    float: none;
+
+    
+}
+#table2 {
+    width: 50%;
+    float: none;
+}
+
 #Albin, #Dario, #Muas {
      height: 700px;
 }
