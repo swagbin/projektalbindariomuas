@@ -14,12 +14,10 @@ html, body {
     overflow: hidden;
     display: inline-block;
 }
-th{
+th,td{
     color: white;
 }
-td{
-    color: white;
-}
+
 
 #table1 {
     width: 50%;
