@@ -16,6 +16,13 @@ iframe{
      height:250; 
    
 }
+  .footer li{
+    
+    display: inline-block;
+}
+.länk p{
+    color: white;
+}
 label{
     color: white;
 }
