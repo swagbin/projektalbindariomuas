@@ -1,11 +1,12 @@
 var index = 0;
-var slideshow = ["2.jpg", "3.jpg", "1.jpg"];
+var slideshow = ["2.jpg", "3.jpg", "1.jpg"]; ///Array of img//
 var intervalId;
 var text = ["This is a website we made for a design company who decided to make their store an E-bussiness", "This is a website-improvement we made a for a company before the release of a new product."
     , "This is one of our employees in work doing an ER-model which is a important part of a system-development project."];
 
 // Our SlideShow function, iterates our picture collection thats in a arraylist until there is no more pictures to iterate
 
+///set interval to get a img slidesshow//
 function pictures() {
 
     intervalId = setInterval(
@@ -21,6 +22,7 @@ function pictures() {
 
         }, 3000);
 }
+////stop the interval method
 function stopInterval() {
     clearInterval(intervalId);
 
@@ -71,7 +73,7 @@ $.getJSON('https://github-trending-api.now.sh/repositories?language=css&sort=sta
         localStorage.setItem("text", textData);
 
     });
-
+//localStorage saved the data until the user open the websites agian//
     $("input").focusout(function regData() {
 
         var namnData = document.getElementById("name").value;
@@ -84,7 +86,7 @@ $.getJSON('https://github-trending-api.now.sh/repositories?language=css&sort=sta
 
     });
 
-
+//remove the data after pressing submit button///
 
     $("#bk1").on("click", function () {
         localStorage.removeItem("namn");
@@ -109,13 +111,13 @@ $.getJSON('https://github-trending-api.now.sh/repositories?language=css&sort=sta
         return false;
     });
 
-
+///animation for our skills bars///
     jQuery('.progressbar ').each(function () {
         jQuery(this).find('.progressbar-bar').animate({
             width: jQuery(this).attr('data-percent')
         }, 2000);
     });
-
+///
     $('.aboutusheader').on("mouseover", function () {
         $('.aboutusheader').css("color", "purple");
     });
@@ -123,6 +125,7 @@ $.getJSON('https://github-trending-api.now.sh/repositories?language=css&sort=sta
         $('.aboutusheader').css("color", "white");
     });
 
+    
     $("#slideshowbutton").on("click", function () {
         if (change === false) {
             $("#slideshowbutton").html("stop");
@@ -251,6 +254,7 @@ function validering() {
     }
 }
 
+///to get the stored data from the localstorage and stop in it into textfields//// 
 function loadData() {
 
     var sparatNamn = localStorage.getItem("namn");
