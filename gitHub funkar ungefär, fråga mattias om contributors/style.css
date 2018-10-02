@@ -1,0 +1,18 @@
+.tablecontainer {
+    width: 70%;
+    margin: 0 auto;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+#table1 {
+    width: 50%;
+    float:left;
+    border: 2px solid black
+    
+
+}
+
+#table2 {
+    border: 2px solid black;
+}
