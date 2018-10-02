@@ -412,22 +412,7 @@ nav{
 z-index: 10;
 }
 	
-	#list{
-    width: 25%;
-    margin: 0 auto;
-    border: 2px solid white;
-  
-   height: 50%;
-   overflow: hidden;
-}
-#table1 {
-    width: 50%;
-    float: none;
-
-    
-}
-#table2 {
-    width: 50%;
+#table1 ,#table2{
     float: none;
 }
 
@@ -485,6 +470,6 @@ z-index: 10;
     background-size: cover;
 }
 .sectionaboutus{
-    height: 350vw;
+    height: 390vw;
 }
 }
